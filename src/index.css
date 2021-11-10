@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.main {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.menu {
+    width: 100%;
+    height: 900px;
+
+    background: #373b44; /* fallback for old browsers */
+    background: -webkitlinear-gradient(to right, hsla(222, 11%, 24%, 0.308), hsla(217, 73%, 46%, 0.302)), url(../assets/Portada.png); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(220, 2%, 25%, 0.301), hsla(217, 89%, 33%, 0.637)), url(../assets/Portada.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.menu2 {
+    width: 100%;
+    height: 75px;
+    background: #373b44;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+nav > p {
+    color: white;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+nav .marcado {
+    font-weight: 900;
+}
+/*Galeria*/
+
+.portafolio {
+    background: #f2f2f2;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.galeria-port {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port {
+    width: 15%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-weight: 900;
+    background: hsl(273, 91%, 27%, 0.7);
+    transition: transform 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+}
+
+.hover-galeria p {
+    color: white;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+footer {
+    background: #414141;
+    padding: 20px 0 15px 0;
+    margin: auto;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    padding-top: 4%;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.content-foo h4 {
+    color: white;
+    border-bottom: 2px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+.content-foom p {
+    color: white;
+}
+
+.textos-header p {
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    text-align: left;
+    top: 10%px;
+    right: 10%;
+    font-size: 92px;
+    color: white;
+}
+.content-foo p {
+    color: white;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-gallery {
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-gap: 1rem;
+    grid-auto-flow: row dense;
+
+    display: flex;
+    justify-content: center;
+}
+
+.portafolio p {
+    padding-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 1%;
+    font-family: "Cormorant Garamond", serif;
+    text-align: justify;
+}
+
+.portafolio ul {
+    padding-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 3%;
+    font-family: "Cormorant Garamond", serif;
+}
+.portafolio li {
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.portafolio h1 {
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 1%;
+    padding-bottom: 3%;
+    font-size: 8vw;
+}
+.portafolio h2 {
+    padding-bottom: 1%;
+    padding-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.portafolio a {
+    text-decoration: none;
+    color: black;
+}
+.portafolio a:hover {
+    border-bottom: 2px solid #b10fe2;
+    color: rgb(191, 16, 235);
+}
+
+.cuerpo {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.video-responsive {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote {
+    font-size: 1.2em;
+    width: 60%;
+    margin: 5%px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #a79999;
+    padding: 1.2em 30px 1.2em 75px;
+
+    line-height: 1.6;
+    position: relative;
+    background: #e5d1f500;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #8324d1;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+}
+
+@media all and (max-width: 420px) {
+    .textos-header h1 {
+        font-size: 40px;
+    }
+
+    .textos-header p {
+        text-align: justify;
+        font-size: 40px;
+    }
+    header {
+        background-position: center;
+    }
+    .imagen-port {
+        width: 50%;
+    }
+    .cuerpo {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .portafolio p {
+        padding-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .portafolio ul {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 5%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .portafolio li {
+        padding-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    blockquote {
+        font-size: small;
+        width: 90%;
+    }
+    nav {
+        text-align: center;
+        padding: 100% 2 0 0;
+    }
+}
+
+@media all and (max-width: 1004px) {
+    .menu {
+        height: 920px;
+    }
+
+    .textos-header p {
+        font-size: 50px;
+    }
+    header {
+        background-position: center;
+    }
+    .imagen-port {
+        width: 40%;
+    }
+    .portafolio p {
+        padding-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .portafolio ul {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 5%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .portafolio li {
+        padding-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    blockquote {
+        font-size: small;
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .textos-header p {
+        font-size: 60px;
+    }
+    .portafolio p {
+        padding-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .portafolio ul {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 5%;
+        font-family: "Cormorant Garamond", serif;
+    }
+    .portafolio li {
+        padding-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    blockquote {
+        font-size: small;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-device-width: 810px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 1) {
+    .menu {
+        height: 650px;
+    }
+}
+@media only screen and (min-device-width: 1080px) and (max-device-width: 810px) and (-webkit-min-device-pixel-ratio: 1) {
+    .menu {
+        height: 720px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) {
+    .menu {
+        height: 750px;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+    .menu {
+        height: 550px;
+    }
+}
+
+/*slider*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: white;
+}
+
+/* Caption text */
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #080808;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+    }
+}
