@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 900px;
 
-    background: #373b44; /* fallback for old browsers */
+    background: #373b44;
     background: -webkitlinear-gradient(to right, hsla(222, 11%, 24%, 0.308), hsla(217, 73%, 46%, 0.302)), url(../assets/Portada.png); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(220, 2%, 25%, 0.301), hsla(217, 89%, 33%, 0.637)), url(../assets/Portada.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
@@ -52,11 +52,7 @@ nav > p {
 nav > a:hover {
     text-decoration: underline;
 }
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 header .textos-header {
     display: flex;
     height: 430px;
@@ -133,7 +129,7 @@ footer {
     overflow: hidden;
     bottom: 0;
     width: 100%;
-    padding-top: 4%;
+    padding-top: 1%;
 }
 
 .contenedor-footer {
