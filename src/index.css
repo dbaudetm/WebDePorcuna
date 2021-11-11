@@ -175,19 +175,6 @@ footer {
     justify-content: center;
 }
 
-.grid-gallery {
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-    display: grid;
-    grid-auto-rows: 200px;
-    grid-gap: 1rem;
-    grid-auto-flow: row dense;
-
-    display: flex;
-    justify-content: center;
-}
-
 .portafolio p {
     padding-bottom: 1%;
     margin-left: 1%;
