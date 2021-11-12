@@ -291,7 +291,7 @@ blockquote span {
     }
     nav {
         text-align: center;
-        padding: 100% 2% 0 0;
+        padding: 10% 2% 0 0;
     }
 }
 @media all and (max-width: 1004px) {
