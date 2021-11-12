@@ -172,15 +172,13 @@ footer {
     font-family: "Roboto", sans-serif;
     position: absolute;
     text-align: left;
-    top: 10%px;
+    top: 10%;
     right: 10%;
     font-size: 92px;
     color: white;
 }
 .content-foo p {
     color: white;
-}
-.galeria {
 }
 
 .portafolio p {
@@ -250,11 +248,10 @@ footer {
     width: 100%;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 blockquote {
     font-size: 1.2em;
     width: 60%;
-    margin: 5%px auto;
+    margin: 5% auto;
     font-family: Open Sans;
     font-style: italic;
     color: #a79999;
@@ -464,24 +461,6 @@ blockquote span {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 /* On smaller screens, decrease text size */
