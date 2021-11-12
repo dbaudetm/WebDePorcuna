@@ -181,8 +181,6 @@ footer {
     color: white;
 }
 .galeria {
-    display: flex;
-    justify-content: center;
 }
 
 .portafolio p {
